@@ -1,0 +1,288 @@
+.header {
+  // border-bottom: 1px solid black;
+  box-shadow: 0px 0px 10px black;
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  @include transition-linear;
+
+  &.hide-header {
+    opacity: 0;
+    top: -100px;
+  }
+
+  .header-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 20px;
+
+    max-width: 1800px;
+    margin: 0 auto;
+    // logo
+    .logo {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      line-height: 1.1;
+      color: black;
+      &__image {
+        height: 75px;
+        width: 75px;
+      }
+
+      &__text {
+        margin-left: -15px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+
+        span {
+          color: $primary-color;
+        }
+      }
+    }
+
+    // desktop navbar
+    .desktop-navbar {
+      display: none;
+    }
+
+    // navbar links
+    .navbar__links {
+      display: flex;
+      align-items: center;
+
+      &--item {
+        margin-left: 8px;
+
+        a {
+          @include transition-linear;
+          font-size: 1.1rem;
+          letter-spacing: 1px;
+          color: $primary-color;
+          padding: 5px;
+
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+
+      &--item:first-child {
+        margin-left: 0;
+      }
+    }
+
+    // shopping cart
+
+    // .cart-container {
+    //   position: absolute;
+    //   bottom: 50px;
+    //   right: 50px;
+    // }
+    .shopping-cart {
+      position: relative;
+      cursor: pointer;
+
+      &__icon {
+        font-size: 1.3rem;
+      }
+
+      &__items {
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        background: $primary-color;
+        border-radius: 15px;
+        height: 1.1rem;
+        width: 1.1rem;
+        font-size: 0.9rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// mobile navbar
+.sidebar__container {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #272727;
+  transform: translate(-100vw);
+  @include transition-linear;
+
+  &.open {
+    transform: translate(0);
+  }
+
+  .mobile-navbar {
+    height: 100%;
+    width: 100%;
+    // navbar links
+    .navbar__links {
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &--item {
+        a {
+          @include transition-linear;
+          font-size: 2rem;
+          letter-spacing: 1px;
+          color: $primary-color;
+          padding: 2rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          display: inline-block;
+
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// shopping cart info
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: #272727;
+  @include transition-linear;
+  transform: translateX(100%);
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  // cart display
+  &.display {
+    transform: translateX(0%);
+  }
+
+  .cart-btn-container {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    .cart-close-btn {
+      font-size: 2.5rem;
+      background: transparent;
+      border: none;
+      color: $secondary-color;
+      cursor: pointer;
+      margin: 20px 20px 0 0;
+      text-align: right;
+    }
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  .cart-container {
+    overflow-y: scroll;
+    margin: 0 auto;
+    max-height: 60%;
+
+    // cart items
+    .cart-item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      grid-column-gap: 2rem;
+      width: 280px;
+      padding-bottom: 20px;
+      padding-right: 15px;
+
+      img {
+        width: 85px;
+        height: 85px;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h3,
+        h4 {
+          font-size: 0.9rem;
+        }
+
+        h3,
+        h4,
+        .remove-item {
+          align-self: flex-start;
+        }
+
+        .remove-item {
+          cursor: pointer;
+          margin-top: 10px;
+        }
+
+        .fa-chevron-up,
+        .fa-chevron-down {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .clear-cart-btn {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: $secondary-color;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.4rem;
+    padding: 8px;
+    margin-top: 15px;
+    margin: 15px auto 0 auto;
+    display: block;
+  }
+}
+
+// mobile nav btn
+.sidebar-btn {
+  background: transparent;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: $primary-color;
+  background-color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  box-shadow: 0 0 2px black;
+
+  z-index: 9;
+}

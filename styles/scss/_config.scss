@@ -1,0 +1,59 @@
+$primary-color: rgb(44, 127, 161);
+$secondary-color: rgb(117, 217, 239);
+$border-radius: 15px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@mixin theme($theme: btnTheme) {
+  background: white;
+  border: 3px solid $primary-color;
+  border-radius: 10px;
+  color: black;
+  font-weight: 700;
+  padding: 5px;
+  margin-right: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@mixin transition-linear {
+  transition: all 0.3s linear;
+}
+
+@mixin media-md {
+  @media screen and (min-width: 780px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1145px) {
+    @content;
+  }
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    0% {
+      transform: translate(0);
+    }
+
+    25% {
+      transform: translate(0);
+      background-position: left;
+    }
+
+    100% {
+      transform: translate(1800px);
+      background: linear-gradient(
+        90deg,
+        rgba(243, 116, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 35%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    }
+  }
+}

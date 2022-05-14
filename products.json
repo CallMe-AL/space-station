@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Andromeda",
+        "price": 14.99,
+        "image": { "fields": { "file": { "url": "./images/andromeda.jpg" } } },
+        "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod tempore vero culpa odio, explicabo sequi ratione. Temporibus praesentium sequi dicta?",
+        "category": "galaxy"
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Big Dipper",
+        "price": 20.99,
+        "image": { "fields": { "file": { "url": "./images/big-dipper.jpg" } } },
+        "desc": "Disrupt put a bird on it chia skateboard keffiyeh master cleanse. Plaid leggings biodiesel, seitan affogato venmo cardigan messenger bag next level.",
+        "category": "constellation"
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Clown-faced Nebula",
+        "price": 50.99,
+        "image": { "fields": { "file": { "url": "./images/clown-faced-nebula.jpg" } } },
+        "desc": "Drinking vinegar poutine ugh biodiesel narwhal lomo +1. Blue bottle snackwave meh pitchfork, kogi unicorn subway tile thundercats migas mustache slow-carb polaroid organic umami.",
+        "category": "nebula"
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Dolphin Nebula",
+        "price": 499.99,
+        "image": { "fields": { "file": { "url": "./images/dolphin-nebula.jpg" } } },
+        "desc": "Cliche 3 wolf moon sriracha, kickstarter migas 90's mumblecore bitters vinyl you probably haven't heard of them beard freegan keffiyeh pug. Aesthetic succulents affogato pok pok heirloom shabby chic.",
+        "category": "nebula"
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Moon",
+        "price": 6.99,
+        "image": { "fields": { "file": { "url": "./images/moon.jpg" } } },
+        "desc": "Cred green juice pour-over selvage, food truck gochujang lyft hot chicken brooklyn pop-up vaporware master cleanse succulents. Cliche cold-pressed meggings, la croix 90's cronut taxidermy yr letterpress put a bird on it ennui crucifix.",
+        "category": "moon"
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Saturn",
+        "price": 29.99,
+        "image": { "fields": { "file": { "url": "./images/saturn.jpg" } } },
+        "desc": "Wolf blog hella you probably haven't heard of them, franzen flexitarian sustainable scenester disrupt raw denim. Tattooed twee raw denim jean shorts snackwave, distillery direct trade try-hard YOLO food truck wolf locavore meditation.",
+        "category": "planet"
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Sun",
+        "price": 9999.99,
+        "image": { "fields": { "file": { "url": "./images/sun.jpg" } } },
+        "desc": "Listicle pabst sriracha, put a bird on it lo-fi poutine health goth. Listicle aesthetic messenger bag, pork belly iPhone tilde deep v schlitz.",
+        "category": "sun"
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Triangulum Galaxy",
+        "price": 15.99,
+        "image": { "fields": { "file": { "url": "./images/triangulum-galaxy.jpg" } } },
+        "desc": "Brunch ethical marfa distillery tumeric chillwave echo park thundercats forage celiac. Coloring book plaid ugh kombucha irony palo santo, photo booth DIY tacos cloud bread pork belly fingerstache air plant organic PBR&B.",
+        "category": "galaxy"
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "Pluto",
+        "price": 199.99,
+        "image": { "fields": { "file": { "url": "./images/pluto.jpg" } } },
+        "desc": "Dummy text? More like dummy thicc text, amirite? Cornhole poutine man braid lo-fi cray ramps fingerstache occupy taiyaki microdosing cred subway tile. Four dollar toast plaid yuccie marfa cronut vaporware.",
+        "category": "planet"
+      }
+    }
+  ]
+}

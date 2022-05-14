@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" description="A fake e-commerce site where you can buy celestial objects.">
+  <title>Space Station</title>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+
+</head>
+<body>
+  <header class="header">  
+    <div class="header-wrap"> 
+      <!-- logo -->
+      <a class="logo" href="#">
+        <p class="logo__text">Space Station</p>
+      </a>    
+      <!-- desktop navbar -->
+      <nav class="desktop-navbar">
+        <ul class="navbar__links">
+          <li class="navbar__links--item">
+            <a href="#">About</a>
+          </li>
+          <li class="navbar__links--item">
+            <a href="#">Store Locator</a>
+          </li>
+          <li class="navbar__links--item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="navbar__links--item">
+            <a href="#">Support</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- shopping cart -->
+      <div class="shopping-cart">
+        <span class="shopping-cart__icon"><i class="fas fa-shopping-cart"></i></span>
+        <div class="shopping-cart__items">0</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- shopping cart info -->
+  <article class="cart-overlay">
+    <div class="cart-sidebar">
+      <div class="cart-btn-container">
+        <button class="cart-close-btn" type="button">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <h1>Your Cart</h1>
+      <div class="cart-container"> 
+        <div class="cart-content">
+          <!-- cart item -->
+          <!-- <div class="cart-item">
+                <img src="images/andromeda.jpg" alt="">
+                <div>
+                  <h3>Andromeda</h3>
+                  <h4>$14.99</h4>
+                  <span class="remove-item" data-id="">remove</span>
+                </div>
+                <div>
+                  <i class="fas fa-chevron-up" data-id=""></i>
+                  <span class="item-amount">1</span>
+                  <i class="fas fa-chevron-down" data-id=""></i>
+                </div>
+              </div> -->
+          <!-- end cart item -->
+        </div>
+      </div>
+      <h2>Cart total : $ <span class="cart-total">0</span></h2>
+      <button class="clear-cart-btn" type="button">clear cart</button>
+    </div>
+  </article>
+  <!-- mobile sidebar btn -->
+  <button class="sidebar-btn" aria-label="open sidebar">
+    <i class="fas fa-bars"></i>
+  </button> 
+  <!-- mobile sidebar menu -->
+  <nav class="sidebar__container">
+    <div class="mobile-navbar">
+      <ul class="navbar__links">
+        <li class="navbar__links--item">
+          <a href="#">About</a>
+        </li>
+        <li class="navbar__links--item">
+          <a href="#">Store Locator</a>
+        </li>
+        <li class="navbar__links--item">
+          <a href="#">Contact</a>
+        </li>
+        <li class="navbar__links--item">
+          <a href="#">Support</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- main section -->
+  <main>  
+    <!-- section wrap -->
+    <div class="section-wrap">
+      <!-- main title -->
+      <section class="main-title">
+        <h1>Welcome to <br><span>Space Station</span></h1>
+        <p>Your stop for purchasing the universe. Simple, fast, and affordable. Buy your celestial object today in just a few clicks!</p>
+        <button class="title-btn" type="button">See our products</button>
+      </section>
+      <!-- Featured item -->      
+      <section class="featured-item">
+        <div class="item">
+          <img class="item__image" src="images/moon.jpg" alt="moon"></img>
+          <div class="item__text">
+            <p>FEATURED ITEM</p>
+            <div class="text-container">
+              <h2 class="featured-title">The Moon</h2>  
+              <p class="featured-info-btn"><i class="fas fa-info-circle"></i></p>
+            </div>   
+          </div>          
+        </div> 
+        <div class="item-desc">
+          
+          <h2 class="featured-title">The Moon</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, voluptate.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, voluptate.</p>
+          <div class="item-desc-footer">
+            <button class="cart-btn" type="button" data-id="5">Add to Cart <span class="shopping-cart__icon"><i class="fas fa-cart-plus"></i></span></button>
+            <button class="close-featured-btn" aria-label="close cart"><i class="fas fa-times"></i></button>  
+          </div>
+        </div>     
+      </section>
+    </div>
+  </main>
+  <!-- Info section -->
+  <section class="headline-section">
+    <div class="headline-item">
+      <img src="images/Car_Outline.svg" alt="Car">
+      <div class="headline-item__content">
+        <h2>Fast curbside pickup!</h2>
+        <p>We'll pack your item for you!</p>
+      </div>
+    </div>
+    <div class="headline-item">
+      <img src="images/mailbox.svg" alt="Delivery">
+      <div class="headline-item__content">
+        <h2>Free same day delivery!</h2>
+        <p>Just pick your item!</p>
+      </div>
+    </div>
+    <div class="headline-item">
+      <img src="images/Eco _Car_Outline.svg" alt="Delivery car">
+      <div class="headline-item__content">
+        <h2>Eco-friendly delivery!</h2>
+        <p>We're part of the universe, too!</p>
+      </div>
+    </div>
+  </section>
+  <!-- page break -->
+  <h2 class="adventure-awaits">Adventure awaits!</h2>
+  <hr class="progress">
+  <!-- product page -->
+  <section id="products" class="product-section">
+    <!-- header -->
+    <div class="product-header">
+      <h2>Check out our products!</h2>
+      <h3>Items consistently updated!</h3>
+    </div>
+    <!-- buttons -->
+    <div class="product-btn-container">
+      <!-- <button class="product-btn" type="button" data-id="all">All</button>
+      <button class="product-btn" type="button" data-id="moon">Moons</button>
+      <button class="product-btn" type="button" data-id="planet">Planets</button>
+      <button class="product-btn" type="button" data-id="galaxy">Galaxies</button> -->
+    </div>
+    <!-- products -->
+    <div class="products-container">
+      <!-- product -->
+      <!-- <div class="product">
+        <div class="product-head">
+          <p class="product-name">Andromeda</p>
+          <p class="product-price">$14.99</p>
+        </div>
+        <div class="img-container">
+          <img src="images/andromeda.jpg" alt="andromeda" class="product-img">
+          <div class="product-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod tempore vero culpa odio, explicabo sequi ratione. Temporibus praesentium sequi dicta?</div>
+        </div>
+        <div class="product-footer">
+          <button class="info-btn" type="button">Info</button>
+          <button class="cart-btn" type="button" data-id="1">Add to Cart <i class="fas fa-cart-plus"></i></button>
+        </div>        
+      </div> -->
+      <!-- end of product -->
+    </div> 
+  </section>
+  <!-- footer -->
+  <div class="fancy-lead-in"></div>
+  <footer>
+    <div class="footer-wrap">
+      <div class="social-connect">
+        <p>Stay <span>connected</span></p>
+        <ul class="social-icons">
+          <li>
+            <a href="#" aria-label="dummy link for display purposes">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="dummy link for display purposes">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="dummy link for display purposes">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">Copyright &copy;some dude, <span class="copyright-date">2021</span>. Made with lots of love &hearts;</p>
+    </div>    
+  </footer>
+
+  <script src="app/app.js"></script>
+</body>
+</html>
